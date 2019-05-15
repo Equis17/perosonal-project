@@ -1,0 +1,244 @@
+/*大中间*/
+.grid {
+    height: 480px;
+}
+/*第一列*/
+.grid-col1 {
+    border-top: 1px solid #f6f6f6;
+    width: 189px;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+}
+.grid-col1 ul {
+    padding-top: 25px;
+}
+.grid-col1 ul li {
+    height: 26px;
+    line-height: 26px;
+    color: #000;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.grid-col1 ul li:hover {
+    background-color: #d9e0ee;
+}
+.grid-col1 li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    margin-left: 3px;
+}
+.grid-col1 li a:hover {
+    color: #f10215;
+}
+/*第二列*/
+.grid-col2 {
+    width: 790px;
+    height: 100%;
+    margin-left: 10px;
+    float: left;
+}
+.grid-col2-t {
+    height: 340px;
+    position: relative;
+    margin-bottom: 10px;
+}
+/*小圆点*/
+.circle {
+    width: 180px;
+    height: 20px;
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+.circle ul {
+    text-align: center;
+}
+.circle a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    float: left;
+    margin: 4px;
+}
+.circle .current {
+    margin-left: 13px;
+    background-color: #f10215;
+}
+/*第二列底部分*/
+.col2-b-l,
+.col2-b-r {
+    width: 390px;
+    height: 130px;
+}
+/*第三列*/
+.grid-col3 {
+    width: 190px;
+    height: 100%;
+    float: right;
+    overflow: hidden;
+}
+.login {
+    width: 160px;
+    height: 84px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding: 15px;
+}
+.login-t {
+    width: 100px;
+    height: 60px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 60px;
+    position: relative;
+
+}
+.login-t a {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+.login-t a:hover {
+    color: #f10215;
+}
+.user-info img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+}
+.user-info {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    background: url("../images/sprite_userinfo@1x.png") no-repeat -70px 0;
+}
+.login-b a {
+    text-decoration: none;
+    display: inline-block;
+    width: 72px;
+    height: 22px;
+    line-height: 22px;
+    border: 2px solid #f10215;
+    color: #f10215;
+    text-align: center;
+}
+.news {
+    height: 140px;
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px;
+}
+.news-t {
+    height: 25px;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 14px;
+}
+.news-t a {
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+    width: 38px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+}
+.cx {
+    border-right: 1px solid #666;
+}
+.gg {
+    margin-left: 20px;
+}
+.more {
+    float: right;
+}
+.news-b ul {
+    padding-top: 10px;
+}
+.news-b ul li {
+    line-height: 25px;
+}
+.news-b ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+}
+.news-b ul li a:hover {
+    color: #f10215;
+}
+
+.expand {
+    width: 199px;
+    height: 208px;
+    background-color: #fff;
+}
+.expand li {
+    width: 38px;
+    height: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    float: left;
+    padding: 45px 5px 10px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+}
+.expand li span {
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    width: 25px;
+    height: 23px;
+    background: url("../images/sprite_fs@1x.png") no-repeat;
+}
+.expand li:nth-child(1) span{
+    background-position: 0 -87px;
+}
+.expand li:nth-child(2) span{
+    background-position: 0 -43px;
+}
+.expand li:nth-child(3) span{
+    background-position: -44px -87px;
+}
+.expand li:nth-child(4) span{
+    background-position: -87px 0;
+}
+.expand li:nth-child(5) span{
+    background-position: -87px -43px;
+}
+.expand li:nth-child(6) span{
+    background-position: 0 0;
+}
+.expand li:nth-child(7) span{
+    background-position: -43px -43px;
+}
+.expand li:nth-child(8) span{
+    background-position: -87px -87px;
+}
+.expand li:nth-child(9) span{
+    background-position: -132px 0;
+}
+.expand li:nth-child(10) span{
+    background-position: -132px -43px;
+}
+.expand li:nth-child(11) span{
+    background-position: -132px -87px;
+}
+.expand li:nth-child(12) span{
+    background-position: -43px 0;
+}
+
