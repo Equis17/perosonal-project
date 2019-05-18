@@ -3,29 +3,36 @@
     padding: 0;
 
 }
+
 body {
     background-color: #f3f5f7;
 
 
 }
+
 ul {
     list-style: none;
 }
+
 .clearfix:before, .clearfix:after {
     content: "";
     display: table;
 }
+
 .clearfix:after {
     clear: both;
 }
+
 .clearfix {
     *zoom: 1;
 }
+
 header {
     height: 100px;
     background-color: #f3f5f7;
     border: 1px solid #f3f5f7;
 }
+
 nav {
     width: 1366px;
     height: 42px;
@@ -33,6 +40,7 @@ nav {
     background-color: #f3f5f7;
     margin: 26px auto;
 }
+
 .nav1 {
     height: 42px;
     float: left;
@@ -43,9 +51,11 @@ nav {
     height: 42px;
     margin-left: 54px;
 }
+
 .nav2 ul li {
     float: left;
 }
+
 .nav2 ul li a {
     float: left;
     text-decoration: none;
@@ -53,9 +63,11 @@ nav {
     display: inline-block;
     color: #666;
 }
+
 .nav2 ul li a:hover {
     border-bottom: 2px solid #00a4ff;
 }
+
 .nav3 {
     margin-left: 220px;
     width: 410px;
@@ -63,6 +75,7 @@ nav {
     border: 1px solid #00a4ff;
     float: left;
 }
+
 .nav3 input[type=text] {
 
     border: 0;
@@ -71,6 +84,7 @@ nav {
     padding-left: 20px;
     float: left;
 }
+
 .nav3 input[type=submit] {
     border: 0;
     width: 48px;
@@ -78,51 +92,60 @@ nav {
     float: left;
     background: #00a4ff url(images/search_06.png) center no-repeat;
 }
-.nav4  {
+
+.nav4 {
     width: 266px;
     height: 42px;
     float: left;
     margin-left: 27px;
 }
+
 .nav4 ul li a {
     text-decoration: none;
     display: block;
     float: left;
     color: #666;
 }
+
 .nav4 .img1 {
     float: left;
     margin: 0 29px 0 34px;
 
 }
+
 .nav4 .img2 {
     float: left;
     margin-top: 5px;
 
 }
+
 .nav4 .word {
     float: left;
     line-height: 42px;
     color: #666;
 }
+
 .banner {
     height: 420px;
-    background: #1c036c url(images/banner_03.png)  no-repeat;
-    background-position: center ;
+    background: #1c036c url(images/banner_03.png) no-repeat;
+    background-position: center;
 }
+
 .banner .bmain {
     width: 1203px;
     height: 420px;
     margin: 0 auto;
 
 }
+
 .banner .bmain .left ul {
     width: 195px;
     height: 420px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     float: left;
 }
-.banner .bmain .left ul li a{
+
+.banner .bmain .left ul li a {
     padding: 0 20px;
     color: #fff;
     text-decoration: none;
@@ -131,12 +154,15 @@ nav {
     line-height: 45px;
     display: block;
 }
+
 .banner .bmain .left ul li a span {
     float: right;
 }
+
 .banner .bmain .left ul li a:hover {
     color: #00b4ff;
 }
+
 .right {
     width: 225px;
     height: 300px;
@@ -144,6 +170,7 @@ nav {
     float: right;
     margin-top: 50px;
 }
+
 .right dl dt {
     height: 50px;
     border: 1px solid #eee;
@@ -156,10 +183,12 @@ nav {
     font-weight: 700;
     margin-bottom: 8px;
 }
+
 .right dl dd:last-child {
 
     border: 0;
 }
+
 .right dl dd {
     width: 193px;
     height: 60px;
@@ -170,6 +199,7 @@ nav {
     padding-top: 10px;
     box-sizing: border-box;
 }
+
 .right dl dd a {
     width: 200px;
     height: 40px;
@@ -181,45 +211,53 @@ nav {
     line-height: 40px;
     font-weight: 700;
 }
+
 .jingpin {
     width: 1366px;
     height: 60px;
     line-height: 60px;
     background-color: #fff;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     margin: 10px auto;
 
 }
+
 .jingpin a {
     text-decoration: none;
     color: black;
     padding: 0 35px;
     border-right: 1px solid #ccc;
 }
+
 .jingpin a:hover {
     color: #88d5ff;
 }
+
 .jingpin a:first-child {
     color: #88d5ff;
     font-weight: bold;
 }
+
 .jingpin a:last-child {
     border: 0;
     float: right;
     color: #88d5ff;
     font-size: 14px;
 }
-.jptop{
+
+.jptop {
     width: 1366px;
     margin: 0 auto;
 
 }
+
 .jptop h4 {
     float: left;
     padding-top: 30px;
     font-size: 20px;
     color: #494949;
 }
+
 .jptop p {
     height: 75px;
     float: right;
@@ -227,10 +265,12 @@ nav {
     color: #666666;
     line-height: 75px;
 }
+
 .jpmain {
     width: 1355px;
     margin: 0 auto;
 }
+
 .jpmain ul li {
     width: 225px;
     height: 270px;
@@ -239,26 +279,32 @@ nav {
     float: left;
     margin-right: 45px;
 }
+
 .jpmain ul li h4 {
     padding: 0 20px 0 30px;
     font-size: 18px;
 }
+
 .jpmain ul li p {
     padding: 15px 20px 10px 30px;
 }
+
 .jpmain ul li p span {
     color: #ff7c2d;
 }
+
 .footer {
     background-color: #fff;
     margin: 100px auto;
     margin-bottom: 50px;
 }
+
 .container {
     width: 1366px;
     margin: 0 auto;
 
 }
+
 .footer-l {
     float: left;
     margin-top: 25px;
@@ -269,6 +315,7 @@ nav {
     color: #666666;
     margin-top: 20px;
 }
+
 .footer-l a {
     text-decoration: none;
     font-size: 18px;
@@ -281,19 +328,23 @@ nav {
     line-height: 35px;
     display: block;
 }
+
 .footer-r {
     float: right;
     margin-top: 25px;
 
 }
+
 .footer-r dl {
     width: 225px;
     float: left;
 }
+
 .footer-r dt {
     font-size: 20px;
     margin-bottom: 20px;
 }
+
 .footer-r dd {
 
     font-size: 14px;

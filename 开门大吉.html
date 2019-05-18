@@ -8,6 +8,7 @@
             margin: 0;
             padding: 0;
         }
+
         .father {
             width: 500px;
             height: 500px;
@@ -17,6 +18,7 @@
             position: relative;
             perspective: 1000px;
         }
+
         .door-r,
         .door-l {
             width: 50%;
@@ -26,22 +28,27 @@
             top: 0;
             transition: all 1s;
         }
+
         .door-r {
             right: 0;
             border-left: 1px solid #000;
             transform-origin: right;
         }
+
         .door-l {
             left: 0;
             border-right: 1px solid #000;
             transform-origin: left;
         }
+
         .father:hover .door-l {
-             transform: rotateY(-130deg);
-         }
+            transform: rotateY(-130deg);
+        }
+
         .father:hover .door-r {
             transform: rotateY(130deg);
         }
+
         .door-l::before,
         .door-r::before {
             content: "";
@@ -53,13 +60,14 @@
             transform: translateY(50%);
             border-radius: 50%;
         }
+
         .door-r::before {
             left: 10px;
         }
+
         .door-l::before {
             right: 10px;
         }
-
 
 
     </style>
