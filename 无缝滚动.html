@@ -8,16 +8,19 @@
             margin: 0;
             padding: 0;
         }
+
         body {
 
         }
+
         .nav {
             width: 500px;
             height: 100px;
             border: 1px solid pink;
-            margin: 100px auto ;
+            margin: 100px auto;
             overflow: hidden;
         }
+
         ul {
             list-style: none;
         }
@@ -26,11 +29,13 @@
             float: left;
 
         }
+
         .nav ul {
             width: 1000px;
             animation: moving 2s linear infinite;
 
         }
+
         @keyframes moving {
             from {
                 transform: translateX(0);
@@ -40,6 +45,7 @@
             }
 
         }
+
         .nav:hover ul {
             animation-play-state: paused;
         }

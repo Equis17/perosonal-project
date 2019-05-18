@@ -12,6 +12,7 @@
             margin: 0 auto;
             position: relative;
         }
+
         /*小黄人身体*/
         .body {
             width: 250px;
@@ -20,13 +21,14 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             background-color: yellow;
             border-radius: 125px;
             overflow: hidden;
         }
+
         /*小黄人头发*/
-        .hair_1,.hair_2 {
+        .hair_1, .hair_2 {
             width: 130px;
             height: 100px;
             border-top: 10px solid #000;
@@ -36,6 +38,7 @@
             left: 100px;
             animation: hair 5s linear infinite;
         }
+
         /*头发动画*/
         @keyframes hair {
             20% {
@@ -51,19 +54,23 @@
                 transform: rotate(45deg);
             }
         }
+
         .hair_1 {
             top: 80px;
         }
+
         .hair_2 {
             top: 70px;
         }
+
         /*小黄人眼睛*/
         .eyes {
             width: 250px;
             height: 110px;
             margin-top: 60px;
         }
-        .eyes_l,.eyes_r {
+
+        .eyes_l, .eyes_r {
             width: 90px;
             height: 90px;
             border: 5px solid #000;
@@ -71,12 +78,15 @@
             position: absolute;
             background-color: #fff;
         }
+
         .eyes_l {
             left: 25px;
         }
+
         .eyes_r {
             right: 25px;
         }
+
         /*眼镜带*/
         .eyes_l::after,
         .eyes_r::after {
@@ -86,16 +96,19 @@
             position: absolute;
             background-color: #000;
         }
+
         .eyes_l::after {
             left: -30px;
             top: 21px;
             transform: rotate(24deg);
         }
+
         .eyes_r::after {
             right: -30px;
             top: 21px;
             transform: rotate(-24deg);
         }
+
         /*黑眼珠*/
         .eyes_l_black,
         .eyes_r_black {
@@ -106,14 +119,17 @@
             border-radius: 50%;
             animation: blackgo 5s linear infinite;
         }
+
         .eyes_l_black {
             left: 20px;
             top: 20px;
         }
+
         .eyes_r_black {
             right: 20px;
             top: 20px;
         }
+
         /*白眼珠*/
         .eyes_l_white,
         .eyes_r_white {
@@ -124,38 +140,43 @@
             border-radius: 50%;
             animation: whitego 5s linear infinite;
         }
+
         .eyes_l_white {
             left: 45px;
             top: 35px;
         }
+
         .eyes_r_white {
             right: 45px;
             top: 35px;
         }
+
         /*黑眼珠动画*/
         @keyframes blackgo {
-              20%,50%,60%,100% {
-                  transform: translate(0px);
-              }
-              30%,40% {
-                  transform: translate(15px);
-              }
-              70%,80% {
-                  transform: translate(-15px);
-              }
-          }
-        /*白眼珠动画*/
-        @keyframes whitego {
-            20%,50%,60%,100% {
-                transform: translate(0,0);
+            20%, 50%, 60%, 100% {
+                transform: translate(0px);
             }
-            30%,40% {
-                transform: translate(15px,4px);
+            30%, 40% {
+                transform: translate(15px);
             }
-            70%,80% {
-                transform: translate(-15px,4px);
+            70%, 80% {
+                transform: translate(-15px);
             }
         }
+
+        /*白眼珠动画*/
+        @keyframes whitego {
+            20%, 50%, 60%, 100% {
+                transform: translate(0, 0);
+            }
+            30%, 40% {
+                transform: translate(15px, 4px);
+            }
+            70%, 80% {
+                transform: translate(-15px, 4px);
+            }
+        }
+
         /*手臂*/
         .hand_l,
         .hand_r {
@@ -167,16 +188,19 @@
             position: absolute;
             z-index: -1;
         }
+
         .hand_l {
             left: 45px;
             top: 260px;
             transform: rotate(30deg);
         }
+
         .hand_r {
             right: 45px;
             top: 260px;
             transform: rotate(-30deg);
         }
+
         .hand_l::after,
         .hand_r::after {
             content: "";
@@ -187,16 +211,19 @@
             border: 5px solid #000;
             border-radius: 10px;
         }
+
         .hand_l::after {
             left: -1px;
             top: 40px;
             transform: rotate(90deg);
         }
+
         .hand_r::after {
             right: -1px;
             top: 40px;
             transform: rotate(-90deg);
         }
+
         /*嘴巴*/
         .mouth {
             width: 68px;
@@ -209,6 +236,7 @@
             left: 90px;
             top: 170px;
         }
+
         .mouth::after {
             content: "";
             width: 73px;
@@ -216,8 +244,9 @@
             border-bottom: 5px solid #000;
             background-color: yellow;
             position: absolute;
-            transform: rotate(-145deg) translate(4px,-13px);
+            transform: rotate(-145deg) translate(4px, -13px);
         }
+
         /*腿脚*/
         .foot_l,
         .foot_r {
@@ -226,14 +255,17 @@
             background-color: #000;
             position: absolute;
         }
+
         .foot_l {
             left: 160px;
             top: 500px;
         }
+
         .foot_r {
             right: 160px;
             top: 500px;
         }
+
         .foot_l::after,
         .foot_r::after {
             content: "";
@@ -244,6 +276,7 @@
             border-radius: 50px;
             position: absolute;
         }
+
         .foot_l::after {
             left: -34px;
             top: 18px;
@@ -253,6 +286,7 @@
             right: -34px;
             top: 18px;
         }
+
         /*衣服上*/
         .trousers_top {
             width: 150px;
@@ -261,9 +295,10 @@
             border-bottom: none;
             background-color: blue;
             position: absolute;
-            transform: translate(40px,70px);
+            transform: translate(40px, 70px);
             z-index: 999;
         }
+
         /*衣服带*/
         .t_l_belt,
         .t_r_belt {
@@ -274,16 +309,19 @@
             background-color: blue;
             z-index: -100;
         }
+
         .t_l_belt {
             left: -74px;
             top: -27px;
             transform: rotate(40deg);
         }
+
         .t_r_belt {
             right: -80px;
             top: -28px;
             transform: rotate(-40deg);
         }
+
         .t_l_belt::after,
         .t_r_belt::after {
             content: "";
@@ -294,14 +332,17 @@
             background-color: #000;
             position: absolute;
         }
+
         .t_l_belt::after {
             left: 85px;
             top: 4px;
         }
+
         .t_r_belt::after {
             right: 85px;
             top: 4px;
         }
+
         /*衣服底部*/
         .trousers_bottom {
             width: 250px;
