@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+
+    <title>Title</title>
+
+</head>
+<body>
+
+<script>
+    var start_x, start_y;
+    document.addEventListener('touchstart', function (e) {
+        start_x = e.targetTouches[0]['clientX'];
+        // start_y = e.targetTouches[0]['clientY'];
+
+    });
+    document.addEventListener('touchmove', function (e) {
+        var offset_x = e.targetTouches[0]['clientX'] - start_x;
+        // var offset_y = e.targetTouches[0]['clientY'] - start_y;
+        console.log(offset_x);
+        // console.log(offset_y);
+    });
+    document.addEventListener('touchend', function () {
+        console.log('end');
+    });
+
+</script>
+</body>
+</html>

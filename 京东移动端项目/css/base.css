@@ -1,0 +1,55 @@
+/*公共样式*/
+
+html,body,ul,li,a,img,p,div {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: "Microsoft YaHei UI", serif;
+    font-size: 13px;
+}
+
+a,a:hover {
+    color: #666;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+input{
+    outline:none;
+    border: none;
+}
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after,.clearfix:before {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.normal_color {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+.red {
+    color: red !important;
+}
+
+.transition {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}

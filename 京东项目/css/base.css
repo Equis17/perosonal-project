@@ -147,6 +147,7 @@ span {
     width: 50px;
     height: 35px;
     float: left;
+    color: #fff;
     background-color: #f10215;
     position: relative;
 }
@@ -167,6 +168,7 @@ span {
     position: absolute;
     right: 95px;
     top: 25px;
+    color: #eee;
     text-align: center;
 }
 

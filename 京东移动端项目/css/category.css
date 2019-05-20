@@ -1,0 +1,44 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cate_head {
+    height: 50px;
+    width: 100%;
+    background-color: #ddd;
+    position: fixed;
+}
+.cate_left {
+    margin-top: 50px;
+    width: 20%;
+}
+.cate_left li{
+    height: 49px;
+    line-height: 49px;
+    border-bottom: 1px solid #666666;
+    background-color: #eee;
+}
+.cate_right {
+    margin-top: 50px;
+    width: 80%;
+}
+.cate_right>a {
+    display: block;
+    width: 100%;
+}
+.cate_right>a>img {
+    width: 100%;
+    height: auto;
+}
+.cate_right .cate_img {
+    margin: 0 auto;
+}
+.cate_right .cate_img a{
+    float: left;
+
+    display: block;
+    width: 33.3%;
+    text-align: center;
+}
