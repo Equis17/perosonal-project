@@ -5,7 +5,7 @@
     <title>函数案例</title>
     <script>
 
-        /* function getSum(a, b) {
+         /*function getSum(a, b) {
              a = 100;
              b = 120;
              console.log(a + b);
@@ -51,7 +51,7 @@
 
 
         //判断一个数是否是素数，（只能被一和自身整除的数）
-        function jdugePrimeNumber(number) {
+        /*function jdugePrimeNumber(number) {
             var isOk = true;
 
             //用for把1和number之间的数遍历出来除了1和number，再用number/ i；再判断
@@ -70,7 +70,28 @@
                 console.log('不是素数！');
             }
         }
-        jdugePrimeNumber(13);
+        jdugePrimeNumber(13);*/
+
+        //错误案例
+         /*function jdugePrimeNumber(number) {
+
+
+             //用for把1和number之间的数遍历出来除了1和number，再用number/ i；再判断
+             for (var i = 2; i < number; i++) {
+
+                 //判断是否能被number整除
+                 if (number % i === 0) {
+                     //如果执行了，就不是素数
+                     console.log(number + '是素数');
+                     break;
+                 }
+                 else {
+                     console.log(number + '不是素数');
+                 }
+             }
+
+         }
+         jdugePrimeNumber(9);*/
 
 
     </script>
