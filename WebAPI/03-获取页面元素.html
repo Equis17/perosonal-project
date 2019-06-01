@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取页面元素</title>
+</head>
+<body>
+    <div id="container">
+        <div>111111</div>
+        <div>222222</div>
+        <p>ppppp</p>
+        <span>span</span>
+    </div>
+    <div>hello</div>
+    <div id="main">world</div>
+    <div>heima</div>
+    <p>heihei</p>
+    <span>123</span>
+    
+    
+    
+    
+    <script>
+        //获取id=container中的两个div
+        var container = document.getElementById('container');
+        var divs = container.getElementsByTagName('div');
+        console.log(divs);
+    </script>
+</body>
+</html>

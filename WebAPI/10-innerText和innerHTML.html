@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerText和innerHTML</title>
+</head>
+<body>
+<div id="box">
+    我是一个div
+    <sapn>我是一个span</sapn>
+</div>
+
+
+<script>
+    var box = document.getElementById('box');
+
+    //innerTExt  innerHTML 用于获取开始标签和结束标签之间的内容
+
+    /*innerText获取内容时，如果内容中还有标签会把标签过滤，直接获取内容，不包括换行和空空白*/
+    console.log(box.innerText);
+    /*innerHTML获取内容时，如果内容中还有标签，会把标签一起获取，原封不动的把内容全部获取到包括空白和换行*/
+    console.log(box.innerHTML);
+    
+</script>
+</body>
+</html>

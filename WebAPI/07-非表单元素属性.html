@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>非表单元素属性</title>
+</head>
+<body>
+<a href="http://www.baidu.com" id="link" title="我是百度">百度</a>
+<img src="images/a.jpeg" id="mv" alt="美女">
+
+
+<script>
+    var link = document.getElementById('link');
+    var mv = document.getElementById('mv');
+    /*DOM的属性值一般对应着标签的属性*/
+    
+    //获取DOM对象的属性值
+    console.log(link.title);
+    console.log(link.href);
+    console.log(link.id);
+    
+    console.log(mv.src);
+    console.log(mv.alt);
+    console.log(mv.id);
+
+    //设置DOM对象的属性
+    link.href = 'http://douyu.com';
+    link.title = '我是骚白';
+    mv.src = 'images/b.jpg';
+    
+    
+    
+</script>
+</body>
+</html>

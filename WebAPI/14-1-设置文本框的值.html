@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置文本框的值</title>
+</head>
+<body>
+<input type="text" value=""><br>
+<input type="text" value=""><br>
+<input type="text" value=""><br>
+<input type="text" value=""><br>
+<input type="text" value=""><br>
+<input type="button" id="btn" value = "获取文本框的值">
+
+<script>
+    //1.当页面加载完毕时，给所有文本框赋值
+
+
+    var inputs = document.getElementsByTagName('input')
+    for (var i = 0; i < inputs.length; i++) {
+        var input = inputs[i];
+        if (input.type === 'text') {
+            input.value = i;
+        }
+    }
+    //2.当点击按钮时，获取所有文本框的值，并使用|分割
+
+    var btn = document.getElementById('btn');
+    var array =[];
+    btn.onclick = function () {
+        for (var i = 0; i < inputs.length; i++) {
+            var input = inputs[i];
+            if (input.type === 'text') {
+                array.push(input.value);
+            }
+        }
+        array = array.join('|');
+        console.log(array);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a标签的点击事件</title>
+</head>
+<body>
+<a href="http://www.baidu.com" id="link" title="我是百度">百度</a>
+
+
+<script>
+    var link = document.getElementById('link');
+    link.onclick = function () {
+        //取消a标签默认行为   跳转到href
+        alert('点击我了');
+        return false;
+    }
+    
+    
+    
+</script>
+
+
+</body>
+</html>

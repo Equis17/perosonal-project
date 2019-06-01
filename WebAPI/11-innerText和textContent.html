@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerText和textContent</title>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<script>
+    var box = document.getElementById('box');
+    console.log(box.innerText);  //获取内部内容
+    console.log(box.textContent);  //获取内部内容
+
+
+    /*兼容性问题
+    * 谷歌     两个都支持
+    * 新版的火狐  两个都支持
+    * 旧版火狐   只支持textContent
+    * 新版IE   两个都支持
+    * 旧版IE   只支持innerText*/
+
+
+</script>
+</body>
+</html>

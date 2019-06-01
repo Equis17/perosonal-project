@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取页面元素</title>
+</head>
+<body>
+
+<div>我是一</div>
+<div id="main">我是二</div>
+<div>我是三</div>
+<p id = 'p'>我是标签</p>
+
+
+<script>
+
+    //参数 --> 标签名字   返回值 --> HTMLCollection 集合 是个伪数组
+    var divs = document.getElementsByTagName('div');
+    console.log(divs);
+    for (var i = 0; i < divs.length; i++) {
+        console.log(divs[i]);
+        //divs中的每一个元素是对象  都是HTMLDivElement
+    }
+
+    /*注意：getElementsByTagName 获取到的集合是动态集合
+    * eg：当界面中新增一个div标签时，HTMLCollection会自动获取更新。
+     * 当界面中没有div标签时会返回HTMLCollection[0] length为0*/
+
+
+</script>
+</body>
+</html>

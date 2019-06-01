@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取页面元素</title>
+</head>
+<body>
+<div>我是一</div>
+<div id="main">我是二</div>
+<div>我是三</div>
+<p id = 'p'>我是标签</p>
+
+
+<script>
+    //document     文档类型
+    //get 获取  Element  元素  By  根据  Id  标示
+
+    //如果页面上没有对应的id，此时返回null
+
+
+    /*对象是有类型的，可根据__proto__查看
+    * div  -->  HTMLDivElement
+    * p  -->   HTMLParagraphElement*/
+    var main = document.getElementById('p');
+    //打印对象dir
+    console.dir(main);
+    
+    
+    
+    
+    
+</script>
+</body>
+</html>

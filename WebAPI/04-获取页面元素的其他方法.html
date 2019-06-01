@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取页面元素的其他方法</title>
+</head>
+<body>
+<div id="main"></div>
+<div name="main"></div>
+<div class="a"></div>
+<div class="a"></div>
+<p class="a"></p>
+<span class="a"></span>
+
+
+<script>
+    //根据标签name属性获取元素   一般不推荐使用
+    //参数：name    返回值：NodeList
+    var a = document.getElementsByName('main');
+    console.log(a);
+    
+    
+    //根据标签的class属性获取元素
+    //浏览器兼容性    IE9以后才支持
+    var b = document.getElementsByClassName('a');
+    console.log(b);
+    
+    
+    //query   查询
+    //Selector   选择器
+    //根据选择器来查找元素
+    var c = document.querySelector('.a');
+    console.log(c);
+    //如果页面有多个相同类名的选择器，只能获取到第一个
+    //浏览器兼容性  IE8后才能执行
+    
+    
+    var d = document.querySelectorAll('.a');
+    console.log(d);
+    //全部返回
+    //浏览器兼容性  IE8后才能执行
+
+
+</script>
+</body>
+</html>

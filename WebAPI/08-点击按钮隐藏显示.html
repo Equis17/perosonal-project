@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮隐藏显示</title>
+    <style>
+        #a {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .show {
+            display: block;
+        }
+        .hidden {
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="隐藏">
+<div id="a" class="show"></div>
+
+
+<script>
+    //1 获取元素
+    var btn = document.getElementById('btn');
+
+    //2 给按钮注册事件
+    //isShow记录了a的状态，true显示  false隐藏
+    var isShow = true;
+    btn.onclick = function () {
+        //3 控制div的显示隐藏
+        var a = document.getElementById('a');
+        if (isShow) {
+            //为什么DOM对象的对应标签的class属性名字叫做className
+            //因为class为关键字，不能作为属性和变量的名称
+            a.className = 'hidden';
+            this.value = '显示';
+            isShow = false;
+
+        } else {
+            a.className = 'show';
+            this.value = '隐藏';
+            isShow = true;
+        }
+
+    }
+
+        /*this的几种情况
+        * 1.普通函数中的this    -->window
+          2.构造函数中的this    -->当前构建函数的对象
+          3.方法中的this       -->方法所属的对象
+          4.事件处理中的this    -->事件源，谁调用该事件this就指向谁    */
+
+
+</script>
+</body>
+</html>

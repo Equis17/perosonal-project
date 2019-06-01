@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兼容性处理</title>
+</head>
+<body>
+<div id="box">
+    hello word!
+</div>
+
+<script>
+    //如何知道浏览器是否支持元素的某个属性
+
+    /*var box = document.getElementById('box');
+    //当属性不存在的时候返回的是  undefined
+    console.log(typeof box.a);
+    //当属性存在时返回的是该属性的类型
+    console.log(typeof box.innerText);
+    console.dir(box);*/
+
+    var box = document.getElementById('box');
+    function getInnerText(element) {
+        if (typeof box.innerText == 'string') {
+            return element.innerText;
+        } else {
+            return element.textContent;
+        }
+    }
+
+    console.log(getInnerText(box));
+
+
+</script>
+</body>
+</html>
